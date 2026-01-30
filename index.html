@@ -2,115 +2,139 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Power | Portfolio</title>  <!-- SEO -->  <meta name="description" content="Power – Discord, YouTube, and Instagram Manager helping creators grow." />
-  <meta name="author" content="Power" />  <style>
+  <title>Power | Portfolio</title>
+  <!-- SEO -->
+  <meta name="description" content="Power – Discord, YouTube, and Instagram Manager helping creators grow." />
+  <meta name="author" content="Power" />
+  <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    }
+    }body {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e5e7eb;
+  line-height: 1.7;
+}
 
-    body {
-      background: linear-gradient(135deg, #020617, #0f172a);
-      color: #e5e7eb;
-      line-height: 1.7;
-    }
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
 
-    header {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 2rem;
-    }
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
 
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
+header span {
+  color: #38bdf8;
+}
 
-    header span {
-      color: #38bdf8;
-    }
+header p {
+  max-width: 600px;
+  margin: auto;
+  color: #9ca3af;
+  font-size: 1.1rem;
+}
 
-    header p {
-      max-width: 600px;
-      margin: auto;
-      color: #9ca3af;
-      font-size: 1.1rem;
-    }
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 4rem 2rem;
+}
 
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 4rem 2rem;
-    }
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #38bdf8;
+}
 
-    h2 {
-      font-size: 2.2rem;
-      margin-bottom: 1.5rem;
-      color: #38bdf8;
-    }
+.card {
+  background: #111827;
+  padding: 2rem;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
 
-    .card {
-      background: #111827;
-      padding: 2rem;
-      border-radius: 18px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.35);
-    }
+ul {
+  list-style: none;
+}
 
-    ul {
-      list-style: none;
-    }
+li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #1f2937;
+  color: #d1d5db;
+}
 
-    li {
-      padding: 0.8rem 0;
-      border-bottom: 1px solid #1f2937;
-      color: #d1d5db;
-    }
+li:last-child {
+  border-bottom: none;
+}
 
-    li:last-child {
-      border-bottom: none;
-    }
+.buttons a {
+  display: inline-block;
+  margin: 1rem 0.5rem 0 0;
+  padding: 0.8rem 1.6rem;
+  background: #38bdf8;
+  color: #020617;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-    .buttons a {
-      display: inline-block;
-      margin: 1rem 0.5rem 0 0;
-      padding: 0.8rem 1.6rem;
-      background: #38bdf8;
-      color: #020617;
-      text-decoration: none;
-      font-weight: 600;
-      border-radius: 999px;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
+.buttons a.secondary {
+  background: transparent;
+  color: #38bdf8;
+  border: 2px solid #38bdf8;
+}
 
-    .buttons a.secondary {
-      background: transparent;
-      color: #38bdf8;
-      border: 2px solid #38bdf8;
-    }
+.buttons a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(56,189,248,0.4);
+}
 
-    .buttons a:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 30px rgba(56,189,248,0.4);
-    }
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
 
-    footer {
-      text-align: center;
-      padding: 2rem;
-      color: #9ca3af;
-      font-size: 0.9rem;
-    }
+@media (max-width: 600px) {
+  header h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+}
 
-    @media (max-width: 600px) {
-      header h1 { font-size: 2.2rem; }
-      h2 { font-size: 1.8rem; }
-    }
-  </style></head>
-<body>  <!-- HERO -->  <header>
+/* SERVICES GRID CSS */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <!-- HERO -->
+  <header>
     <div>
       <h1>Hey, I'm <span>Power</span></h1>
       <p>
@@ -124,9 +148,7 @@
   </header>  <!-- ABOUT -->  <section id="about">
     <h2>About Me</h2>
     <div class="card">
-      <p>
-        I'm Power, a dedicated digital manager focused on building clean, organized, and engaging online spaces. I work closely with creators to ensure their communities stay active, their content stays consistent, and their brand keeps growing.
-      </p>
+      <p>I'm Power, a dedicated digital manager focused on building clean, organized, and engaging online spaces. I work closely with creators to ensure their communities stay active, their content stays consistent, and their brand keeps growing.</p>
     </div>
   </section>  <!-- SKILLS -->  <section id="skills">
     <h2>My Skills</h2>
@@ -139,78 +161,76 @@
         <li>Growth-focused and detail-oriented mindset</li>
       </ul>
     </div>
-  </section><!-- SERVICES -->
-
-  <section id="services">
-  <h2>My Services</h2>
-  <p style="color:#9ca3af; margin-bottom:2rem;">Comprehensive Discord community management solutions</p>  <div class="services-grid"><div class="card">
-  <h3>Community Setup</h3>
-  <p>Complete Discord server setup with channels, roles, and permissions</p>
-  <ul>
-    <li>Server structure design</li>
-    <li>Role hierarchy setup</li>
-    <li>Channel organization</li>
-    <li>Bot integration</li>
-  </ul>
-</div>
-
-<div class="card">
-  <h3>Moderation</h3>
-  <p>24/7 community moderation and safety management</p>
-  <ul>
-    <li>Active monitoring</li>
-    <li>Rule enforcement</li>
-    <li>Conflict resolution</li>
-    <li>Anti-spam protection</li>
-  </ul>
-</div>
-
-<div class="card">
-  <h3>Growth Strategy</h3>
-  <p>Proven strategies to grow and engage your community</p>
-  <ul>
-    <li>Engagement campaigns</li>
-    <li>Event planning</li>
-    <li>Content strategy</li>
-    <li>Partnership building</li>
-  </ul>
-</div>
-
-<div class="card">
-  <h3>Community Engagement</h3>
-  <p>Keep your community active and engaged daily</p>
-  <ul>
-    <li>Daily interactions</li>
-    <li>Community events</li>
-    <li>Member recognition</li>
-    <li>Feedback collection</li>
-  </ul>
-</div>
-
-<div class="card">
-  <h3>Bot Management</h3>
-  <p>Custom bot setup and management for enhanced functionality</p>
-  <ul>
-    <li>Bot configuration</li>
-    <li>Custom commands</li>
-    <li>Automation setup</li>
-    <li>Performance monitoring</li>
-  </ul>
-</div>
-
-<div class="card">
-  <h3>Consulting</h3>
-  <p>Expert advice on community building and management</p>
-  <ul>
-    <li>Strategy consultation</li>
-    <li>Problem solving</li>
-    <li>Best practices</li>
-    <li>Growth planning</li>
-  </ul>
-</div>
-
+  </section>  <!-- SERVICES -->  <section id="services">
+    <h2>My Services</h2>
+    <p style="color:#9ca3af; margin-bottom:2rem;">Comprehensive Discord community management solutions</p>
+    <div class="services-grid">
+      <div class="card">
+        <h3>Community Setup</h3>
+        <p>Complete Discord server setup with channels, roles, and permissions</p>
+        <ul>
+          <li>Server structure design</li>
+          <li>Role hierarchy setup</li>
+          <li>Channel organization</li>
+          <li>Bot integration</li>
+        </ul>
+      </div><div class="card">
+    <h3>Moderation</h3>
+    <p>24/7 community moderation and safety management</p>
+    <ul>
+      <li>Active monitoring</li>
+      <li>Rule enforcement</li>
+      <li>Conflict resolution</li>
+      <li>Anti-spam protection</li>
+    </ul>
   </div>
-</section>  <!-- CONTACT -->  <section id="contact">
+
+  <div class="card">
+    <h3>Growth Strategy</h3>
+    <p>Proven strategies to grow and engage your community</p>
+    <ul>
+      <li>Engagement campaigns</li>
+      <li>Event planning</li>
+      <li>Content strategy</li>
+      <li>Partnership building</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Community Engagement</h3>
+    <p>Keep your community active and engaged daily</p>
+    <ul>
+      <li>Daily interactions</li>
+      <li>Community events</li>
+      <li>Member recognition</li>
+      <li>Feedback collection</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Bot Management</h3>
+    <p>Custom bot setup and management for enhanced functionality</p>
+    <ul>
+      <li>Bot configuration</li>
+      <li>Custom commands</li>
+      <li>Automation setup</li>
+      <li>Performance monitoring</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>Consulting</h3>
+    <p>Expert advice on community building and management</p>
+    <ul>
+      <li>Strategy consultation</li>
+      <li>Problem solving</li>
+      <li>Best practices</li>
+      <li>Growth planning</li>
+    </ul>
+  </div>
+</div>
+
+  </section>  <!-- CONTACT -->  <section id="contact">
     <h2>Contact Me</h2>
     <div class="card">
       <p>Let’s work together and grow your community.</p>
@@ -221,5 +241,6 @@
     </div>
   </section>  <footer>
     © 2026 Power. All rights reserved.
-  </footer></body>
+  </footer>
+</body>
 </html>
