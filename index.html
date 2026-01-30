@@ -33,14 +33,18 @@
     nav ul li a { color: #e5e5e5; text-decoration: none; font-weight: 500; transition: 0.3s; }
     nav ul li a:hover { color: #ffffff; }
 
-    /* Hide navbar on mobile */
-    @media(max-width:768px) {
-      nav { display: none; }
+    /* MOBILE NAVBAR */
+    @media(max-width:768px){
+      nav ul { display: none; } /* Hide menu links */
+      nav .contact-mobile { display: block; color: #e5e5e5; text-decoration: none; font-weight: 500; }
+    }
+    @media(min-width:769px){
+      nav .contact-mobile { display: none; }
     }
 
     /* HERO */
     header {
-      min-height:70vh; /* Reduced height for smaller spacing */
+      min-height:70vh;
       display:flex;
       flex-direction:column;
       align-items:center;
@@ -53,14 +57,14 @@
     header span { color:#cccccc; }
     header p { max-width:600px; margin:auto; color:#aaaaaa; font-size:1.1rem; }
 
-    section { max-width:1000px; margin:auto; padding:2rem 2rem; } /* Reduced padding between sections */
+    section { max-width:1000px; margin:auto; padding:2rem 2rem; }
     h2 { font-size:2.2rem; margin-bottom:1rem; color:#ffffff; text-align:center; }
     .card {
       background: rgba(30,30,30,0.95);
-      padding:1.5rem; /* Reduced padding inside cards */
+      padding:1.5rem;
       border-radius:18px;
       box-shadow: 0 0 5px #00000055;
-      margin-bottom:1.5rem; /* Reduced spacing between cards */
+      margin-bottom:1.5rem;
       transition: transform 0.3s, box-shadow 0.3s;
     }
     .card:hover { transform: translateY(-5px); box-shadow: 0 0 10px #55555555; }
@@ -77,8 +81,7 @@
     @media(max-width:600px){
       header h1{font-size:2.2rem;}
       h2{font-size:1.8rem;}
-      nav ul {flex-direction: column; gap: 1rem;}
-      section {padding:2rem 1rem;} /* Keep mobile spacing readable */
+      section {padding:2rem 1rem;}
     }
 
     .services-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem;}
@@ -91,12 +94,15 @@
   <!-- NAVBAR -->
   <nav>
     <div class="logo">Power</div>
+    <!-- Desktop menu -->
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#communities">Communities</a></li>
       <li><a href="#services">Services</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <!-- Mobile contact link -->
+    <a href="#contact" class="contact-mobile">Contact</a>
   </nav>
 
   <!-- HERO -->
